@@ -13,6 +13,7 @@ class City extends Component {
     selectCity = (city)=>{
         this.props.dispatch(changeCityAC(city));
         this.props.history.goBack();
+		console.log('22222');
     }
     goToLetter =(id)=>{
         this.scroll.scrollToElement(`#${id}`,500);
